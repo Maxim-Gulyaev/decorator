@@ -5,9 +5,9 @@ public class Main {
         Product milkOnWeekend = new WeekendDiscount(new Milk(200));
         Product milkOnWeekendForPensioner = new PensionerDiscount(new WeekendDiscount(new Milk(200)));
 
-        System.out.println(milk.getPrice());
-        System.out.println(milkOnWeekend.getPrice());
-        System.out.println(milkOnWeekendForPensioner.getPrice());
+        System.out.println("Common price is " + milk.getPrice() + " rubles.");
+        System.out.println("Weekend price is " + milkOnWeekend.getPrice() + " rubles.");
+        System.out.println("Weekend price for pensioners is " + milkOnWeekendForPensioner.getPrice() + " rubles.");
 
     }
 }
